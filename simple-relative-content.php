@@ -14,7 +14,7 @@ load_plugin_textdomain('simple_relative_content', null, basename(dirname(__FILE_
 // We use the const WP_SITEURL everywhere, so we make sure it means something for WP
 function src_define_siteurl_if_not_exists()
 {
-    if (!defined(WP_SITEURL)) {
+    if (!defined('WP_SITEURL')) {
         define('WP_SITEURL', get_option('siteurl'));
     }
 }
